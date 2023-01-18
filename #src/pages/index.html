@@ -1,0 +1,1702 @@
+@@include("../components/_header.html")
+
+<section class="calculator main-gap">
+  <div class="wrapper">
+
+    <div class="calculator__content">
+      <div class="calculator__left">
+        <div class="calculator__gallery video-gallery lightgallery">
+          <div class="video-gallery__title title-small-bold border-b-3">Галерея</div>
+
+          <div class="video-gallery__list">
+
+            <div class="video-gallery__item lightgallery-item" data-src="https://www.youtube.com/embed/dl16e_mG6hg">
+              <div class="video-gallery__item-name">Как выбрать облицовку бассейна?</div>
+              <div class="video-gallery__item-video">
+                <img src="./img/video-prev.png" alt="">
+              </div>
+            </div>
+
+            <div class="video-gallery__item lightgallery-item" data-src="https://www.youtube.com/embed/dl16e_mG6hg">
+              <div class="video-gallery__item-name">Как проходит процесс строительства чаши?</div>
+              <div class="video-gallery__item-video">
+                <img src="./img/video-prev.png" alt="">
+              </div>
+            </div>
+
+            <div class="video-gallery__item lightgallery-item" data-src="https://www.youtube.com/embed/dl16e_mG6hg">
+              <div class="video-gallery__item-name">Реализация проекта под ключ.</div>
+              <div class="video-gallery__item-video">
+                <img src="./img/video-prev.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <a href="#" class="video-gallery__all">Загрузить ещё</a>
+
+        </div>
+      </div>
+
+      <div class="calculator__right">
+        <div class="calculator__wrap">
+          <div class="title-main-regular mb-30">Строительство бетонных бассейнов</div>
+
+          <div class="calculator__links mb-50">
+            <a href="#" class="calculator__link main-btn">Калькулятор пропиленового бассейна</a>
+            <a href="#" class="calculator__link main-btn">Калькулятор плёночного ПВХ бассейна</a>
+            <a href="#" class="calculator__link main-btn active">Калькулятор бетонного бассейна</a>
+          </div>
+
+          <div class="calculator__title title-main-bold mb-20">КАЛЬКУЛЯТОР БЕТОННОГО БАССЕЙНА</div>
+          <div class="calculator__subtitle subtitle mb-50">Укажите начальные параметры и получите первичную стоимость
+            строительства вашего бассейна.</div>
+
+          <div class="calculator__contact contact-calc mb-50">
+            <div class="title-small-bold border-b-3 pb-20 mb-20">Контакты</div>
+
+            <div class="contact-calc__list p-l-r-30">
+              <div class="contact-calc__item input-ui">
+                <div class="input-ui__wrapper">
+                  <div class="input-ui__name">Телефон*</div>
+                  <input type="tel" class="input-ui__field">
+                </div>
+              </div>
+
+              <div class="contact-calc__item input-ui">
+                <div class="input-ui__wrapper">
+                  <div class="input-ui__name">Email*</div>
+                  <input type="text" class="input-ui__field">
+                </div>
+              </div>
+
+              <div class="contact-calc__item input-ui">
+                <div class="input-ui__wrapper">
+                  <div class="input-ui__name">Имя*</div>
+                  <input type="text" class="input-ui__field">
+                </div>
+              </div>
+
+              <div class="contact-calc__item input-ui --lsit --city">
+                <div class="input-ui__wrapper">
+                  <div class="input-ui__name">Брянск</div>
+                  <input type="text" class="input-ui__field">
+                  <div class="input-ui__list-wrapper">
+                    <ul class="input-ui__list">
+                      <li class="input-ui__list-item">Брянская область</li>
+                      <li class="input-ui__list-item">улица Брянцева, Санкт-Петербург</li>
+                      <li class="input-ui__list-item">улица Брянцева, 13к1, Санкт-Петербург</li>
+                      <li class="input-ui__list-item">станция Брянск-1-Орловский, Московская железная дорога</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="calculator__size size-calc mb-50">
+            <div class="size-calc__row">
+              <div class="size-calc__column">
+                <div class="size-calc__block p-l-r-30 p-t-b-30">
+                  <div class="size-calc__list">
+                    <div class="size-calc__item input-ui js-side-input" data-side="long">
+                      <div class="input-ui__wrapper">
+                        <div class="input-ui__name">Длина, м*</div>
+                        <input type="text" class="input-ui__field">
+                      </div>
+                    </div>
+
+                    <div class="size-calc__item input-ui js-side-input" data-side="width">
+                      <div class="input-ui__wrapper">
+                        <div class="input-ui__name">Ширина, м*</div>
+                        <input type="text" class="input-ui__field">
+                      </div>
+                    </div>
+
+                    <div class="size-calc__item input-ui js-side-input" data-side="depth">
+                      <div class="input-ui__wrapper">
+                        <div class="input-ui__name">Глубина, м*</div>
+                        <input type="text" class="input-ui__field">
+                      </div>
+                    </div>
+
+                    <div class="size-calc__item input-ui">
+                      <div class="input-ui__wrapper">
+                        <div class="input-ui__name">Тип бассейна*</div>
+                        <select>
+                          <option selected value="Частный">Частный</option>
+                          <option value="Детский">Детский</option>
+                          <option value="Общественный">Общественный</option>
+                          <option value="Оздоровительный">Оздоровительный</option>
+                          <option value="Спортивный">Спортивный</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="size-calc__item input-ui js-side-input" data-side="width-small">
+                      <div class="input-ui__wrapper">
+                        <div class="input-ui__name">Длина мелкой зоны, м*</div>
+                        <input type="text" class="input-ui__field">
+                      </div>
+                    </div>
+
+                    <div class="size-calc__item input-ui">
+                      <div class="input-ui__wrapper">
+                        <div class="input-ui__name">Наличие мелкой зоны</div>
+                        <div class="input-ui__list-radio">
+                          <label class="input-ui__radio-label">
+                            <input checked type="radio" name="radio-zone-1" class="input-ui__radio">
+                            <div class="input-ui__radio-mark">Да</div>
+                          </label>
+
+                          <label class="input-ui__radio-label">
+                            <input type="radio" name="radio-zone-1" class="input-ui__radio">
+                            <div class="input-ui__radio-mark">Нет</div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="size-calc__item input-ui js-side-input" data-side="depth-small">
+                      <div class="input-ui__wrapper">
+                        <div class="input-ui__name">Глубина мелкой зоны, м*</div>
+                        <input type="text" class="input-ui__field">
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="size-calc__button">
+                    <div class="size-calc__clear">Очистить фильтр</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="size-calc__column">
+                <div class="size-calc__scheme">
+
+                  <div class="size-calc__scheme-wrap">
+
+                    <div class="size-calc__dots">
+                      <div class="size-calc__dot js-side-dot" data-side="long" style="top: -6%; left: 50%;">
+                        <div class="size-calc__dot-name">
+                          Длина
+                        </div>
+                        <div class="size-calc__dot-marker"></div>
+                      </div>
+
+                      <div class="size-calc__dot --left js-side-dot" data-side="width" style="top: 7%; left: 4%;">
+                        <div class="size-calc__dot-name">
+                          Ширина
+                        </div>
+                        <div class="size-calc__dot-marker"></div>
+                      </div>
+
+                      <div class="size-calc__dot --left js-side-dot" data-side="depth" style="top:59%; left: -3%;">
+                        <div class="size-calc__dot-name">
+                          Глубина
+                        </div>
+                        <div class="size-calc__dot-marker"></div>
+                      </div>
+
+                      <div class="size-calc__dot js-side-dot" data-side="depth-small" style="top: 45%; left: 85%;">
+                        <div class="size-calc__dot-name">
+                          Глубина мелкой зоны
+                        </div>
+                        <div class="size-calc__dot-marker"></div>
+                      </div>
+
+                      <div class="size-calc__dot --left js-side-dot" data-side="width-small"
+                        style="top:66%; left: 73%;">
+                        <div class="size-calc__dot-name">
+                          Длина мелкой зоны
+                        </div>
+                        <div class="size-calc__dot-marker"></div>
+                      </div>
+
+                    </div>
+
+                    <svg class="size-calc__svg" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" width="383" height="150" viewBox="0 0 383 150"
+                      fill="none">
+                      <rect width="381" height="51" transform="matrix(-1 0 0 1 382 0)" fill="url(#pattern0)" />
+                      <path class="js-line-side" data-side="width"
+                        d="M46.3242 0.0236816L1.31397 48.9674C0.940126 49.374 0.96661 50.0066 1.37313 50.3804L2.10919 51.0573L47.7964 1.3775L46.3242 0.0236816Z"
+                        fill="#D7D9DB" />
+                      <path
+                        d="M380.256 0.211914L335.582 48.7904C335.208 49.1969 335.234 49.8295 335.641 50.2034L336.377 50.8803L380.374 3.03786C381.122 2.22483 381.069 0.959608 380.256 0.211914Z"
+                        fill="#D7D9DB" />
+                      <path
+                        d="M380.655 62.6746L335.468 111.811L336.646 112.894C336.808 113.043 337.061 113.033 337.211 112.87L381.924 64.2492C382.036 64.1272 382.029 63.9375 381.907 63.8253L380.655 62.6746Z"
+                        fill="#D7D9DB" />
+                      <path class="js-line-side" data-side="depth-small"
+                        d="M334.9 51L334.9 112C334.9 112.552 335.348 113 335.9 113L336.9 113L336.9 51L334.9 51Z"
+                        fill="#D7D9DB" />
+                      <path class="js-line-side" data-side="depth" d="M1 51L1 149L3 149L3 51L1 51Z" fill="#D7D9DB" />
+                      <path
+                        d="M379.988 0L379.988 63C379.988 63.5523 380.436 64 380.988 64L381.988 64L381.988 -8.74227e-08L379.988 0Z"
+                        fill="#D7D9DB" />
+                      <path d="M381.988 0H46.1883C46.0779 0 45.9883 0.0895431 45.9883 0.2V2H381.988V0Z"
+                        fill="#008BFF" />
+                      <path d="M337 49H1.5C1.22385 49 1 49.2239 1 49.5V51H337V49Z" fill="#D7D9DB" />
+                      <path class="js-line-side" data-side="long" d="M382 0H46.5C46.2238 0 46 0.223858 46 0.5V2H382V0Z"
+                        fill="#D7D9DB" />
+                      <path class="js-line-side" data-side="width-small"
+                        d="M337 111H250.1C250.045 111 250 111.045 250 111.1V113H337V111Z" fill="#D7D9DB" />
+                      <path d="M188 147H1.5C1.22386 147 1 147.224 1 147.5V149H188V147Z" fill="#D7D9DB" />
+                      <path
+                        d="M250.449 111.202C250.339 111.011 250.094 110.946 249.903 111.056L187.358 147.166C187.119 147.304 187.037 147.61 187.175 147.849L187.725 148.802C187.836 148.993 188.08 149.058 188.272 148.948L250.903 112.788C251.094 112.678 251.159 112.433 251.049 112.242L250.449 111.202Z"
+                        fill="#D7D9DB" />
+                      <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use xlink:href="#image0_342_8452"
+                            transform="translate(-0.120735 -2.60784) scale(0.00262467 0.0196078)" />
+                        </pattern>
+                        <image id="image0_342_8452" width="480" height="340"
+                          xlink:href="data:image/png;base64,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" />
+                      </defs>
+                    </svg>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator__two-column mb-50">
+            <div class="calculator__column">
+              <div class="title-small-bold border-b-3 pb-20 mb-20">Расположение</div>
+
+              <div class="calculator__group-radio">
+                <label class="calculator__radio radio-btn">
+                  <input checked type="radio" name="radio-calc-2" class="radio-btn__input" />
+                  <div class="radio-btn__mark">В помещении</div>
+                </label>
+
+                <label class="calculator__radio radio-btn">
+                  <input type="radio" name="radio-calc-2" class="radio-btn__input" />
+                  <div class="radio-btn__mark">На улице</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="calculator__column">
+              <div class="title-small-bold border-b-3 pb-20 mb-20">Техническое помещения для оборудования</div>
+
+              <div class="calculator__group-radio">
+                <label class="calculator__radio radio-btn">
+                  <input type="radio" name="radio-calc-3" class="radio-btn__input" />
+                  <div class="radio-btn__mark">Есть</div>
+                </label>
+
+                <label class="calculator__radio radio-btn">
+                  <input checked type="radio" name="radio-calc-3" class="radio-btn__input" />
+                  <div class="radio-btn__mark">Нет</div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator__ladder ladder-calc mb-50">
+            <div class="title-small-bold border-b-3 pb-20 mb-20">Тип лестницы</div>
+
+            <div class="ladder-calc__ladder-wrap p-l-r-30">
+              <div class="tip-el mb-20">
+                Можно выбирать один, несколько или ни одного из вариантов
+              </div>
+
+              <div class="ladder-calc__lsit">
+                <div class="ladder-calc__item">
+                  <label class="checkbox-image">
+                    <input checked type="checkbox" class="checkbox-image__input">
+                    <div class="checkbox-image__wrap">
+                      <div class="checkbox-image__img">
+                        <img src="./img/image-ladder-1.png" alt="">
+                      </div>
+
+                      <div class="checkbox-image__mark">
+                        <span>Нержавейка</span>
+                        <span class="checkbox-image__mark-chek"></span>
+                      </div>
+                    </div>
+                  </label>
+
+                </div>
+
+                <div class="ladder-calc__item">
+                  <label class="checkbox-image">
+                    <input type="checkbox" class="checkbox-image__input">
+                    <div class="checkbox-image__wrap">
+                      <div class="checkbox-image__img">
+                        <img src="./img/image-ladder-2.png" alt="">
+                      </div>
+
+                      <div class="checkbox-image__mark">
+                        <span>Римский вход</span>
+                        <span class="checkbox-image__mark-chek"></span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="calculator__option option-calc mb-50">
+            <div class="option-calc__wrap p-l-r-30 p-t-b-30">
+              <div class="option-calc__list">
+                <div class="option-calc__item input-ui">
+                  <div class="input-ui__wrapper">
+                    <div class="input-ui__name">Строительство чаши</div>
+                    <div class="input-ui__list-radio">
+                      <label class="input-ui__radio-label">
+                        <input checked type="radio" name="radio-option-1" class="input-ui__radio">
+                        <div class="input-ui__radio-mark">Да</div>
+                      </label>
+
+                      <label class="input-ui__radio-label">
+                        <input type="radio" name="radio-option-1" class="input-ui__radio">
+                        <div class="input-ui__radio-mark">Нет</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="option-calc__item input-ui">
+                  <div class="input-ui__wrapper">
+                    <div class="input-ui__name">Оштукатуривание чаши</div>
+                    <div class="input-ui__list-radio">
+                      <label class="input-ui__radio-label">
+                        <input checked type="radio" name="radio-option-2" class="input-ui__radio">
+                        <div class="input-ui__radio-mark">Да</div>
+                      </label>
+
+                      <label class="input-ui__radio-label">
+                        <input type="radio" name="radio-option-2" class="input-ui__radio">
+                        <div class="input-ui__radio-mark">Нет</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="option-calc__item input-ui">
+                  <div class="input-ui__wrapper">
+                    <div class="input-ui__name">Гидроизоляция чаши</div>
+                    <div class="input-ui__list-radio">
+                      <label class="input-ui__radio-label">
+                        <input checked type="radio" name="radio-option-3" class="input-ui__radio">
+                        <div class="input-ui__radio-mark">Да</div>
+                      </label>
+
+                      <label class="input-ui__radio-label">
+                        <input type="radio" name="radio-option-3" class="input-ui__radio">
+                        <div class="input-ui__radio-mark">Нет</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="option-calc__item input-ui">
+                  <div class="input-ui__wrapper">
+                    <div class="input-ui__name">Облицовка чаши</div>
+                    <div class="input-ui__list-radio">
+                      <label class="input-ui__radio-label">
+                        <input checked type="radio" name="radio-option-4" class="input-ui__radio">
+                        <div class="input-ui__radio-mark">Да</div>
+                      </label>
+
+                      <label class="input-ui__radio-label">
+                        <input type="radio" name="radio-option-4" class="input-ui__radio">
+                        <div class="input-ui__radio-mark">Нет</div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="option-calc__item input-ui">
+                  <div class="input-ui__wrapper">
+                    <div class="input-ui__name">Способ облицовки чаши</div>
+                    <select>
+                      <option selected value="Плёнка">Плёнка</option>
+                      <option selected value="Плёнка 2">Плёнка 2</option>
+                      <option selected value="Плёнка 3">Плёнка 3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="option-calc__item input-ui">
+                  <div class="input-ui__wrapper">
+                    <div class="input-ui__name">Тип перелива</div>
+                    <select>
+                      <option selected value="Переливной ">Переливной </option>
+                      <option selected value="Переливной 2">Переливной 2</option>
+                      <option selected value="Переливной 3">Переливной 3</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="option-calc__item input-ui">
+                  <div class="input-ui__wrapper">
+                    <div class="input-ui__name">СПА Зона</div>
+                    <select>
+                      <option selected value="Не нужна">Не нужна</option>
+                      <option selected value="Нужна">Нужна</option>
+                      <option selected value="Не нужна 2">Не нужна 2</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="option-calc__item --link lightgallery">
+                  <div class="lightgallery-item" data-src="./img/image-full-spa.png">Посмотреть пример зоны СПА</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator__tape tape-calc mb-50">
+            <div class="title-small-bold border-b-3 pb-20 mb-20">Тип плёнки</div>
+
+            <div class="tape-calc__wrap p-l-r-30">
+              <div class="tape-calc__slider swiper">
+                <div class="swiper-wrapper mb-20">
+
+                  <div class="swiper-slide">
+                    <label class="checkbox-image --radio">
+                      <input checked type="radio" name="radio-tape" class="checkbox-image__input">
+                      <div class="checkbox-image__wrap">
+                        <div class="checkbox-image__img">
+                          <img src="./img/image-tape-1.png" alt="">
+                        </div>
+
+                        <div class="checkbox-image__mark">
+                          <span>Лайнер Cefil Pool</span>
+                          <span class="checkbox-image__mark-chek"></span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <label class="checkbox-image --radio">
+                      <input type="radio" name="radio-tape" class="checkbox-image__input">
+                      <div class="checkbox-image__wrap">
+                        <div class="checkbox-image__img">
+                          <img src="./img/image-tape-1.png" alt="">
+                        </div>
+
+                        <div class="checkbox-image__mark">
+                          <span>Лайнер Cefil Inter</span>
+                          <span class="checkbox-image__mark-chek"></span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <label class="checkbox-image --radio">
+                      <input type="radio" name="radio-tape" class="checkbox-image__input">
+                      <div class="checkbox-image__wrap">
+                        <div class="checkbox-image__img">
+                          <img src="./img/image-tape-3.png" alt="">
+                        </div>
+
+                        <div class="checkbox-image__mark">
+                          <span>Лайнер Adriatic Blue</span>
+                          <span class="checkbox-image__mark-chek"></span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <label class="checkbox-image --radio">
+                      <input type="radio" name="radio-tape" class="checkbox-image__input">
+                      <div class="checkbox-image__wrap">
+                        <div class="checkbox-image__img">
+                          <img src="./img/image-tape-4.png" alt="">
+                        </div>
+
+                        <div class="checkbox-image__mark">
+                          <span>Лайнер Elbtal Plastics</span>
+                          <span class="checkbox-image__mark-chek"></span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <label class="checkbox-image --radio">
+                      <input type="radio" name="radio-tape" class="checkbox-image__input">
+                      <div class="checkbox-image__wrap">
+                        <div class="checkbox-image__img">
+                          <img src="./img/image-tape-1.png" alt="">
+                        </div>
+
+                        <div class="checkbox-image__mark">
+                          <span>Лайнер Cefil Pool</span>
+                          <span class="checkbox-image__mark-chek"></span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <label class="checkbox-image --radio">
+                      <input type="radio" name="radio-tape" class="checkbox-image__input">
+                      <div class="checkbox-image__wrap">
+                        <div class="checkbox-image__img">
+                          <img src="./img/image-tape-1.png" alt="">
+                        </div>
+
+                        <div class="checkbox-image__mark">
+                          <span>Лайнер Cefil Inter</span>
+                          <span class="checkbox-image__mark-chek"></span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <label class="checkbox-image --radio">
+                      <input type="radio" name="radio-tape" class="checkbox-image__input">
+                      <div class="checkbox-image__wrap">
+                        <div class="checkbox-image__img">
+                          <img src="./img/image-tape-3.png" alt="">
+                        </div>
+
+                        <div class="checkbox-image__mark">
+                          <span>Лайнер Adriatic Blue</span>
+                          <span class="checkbox-image__mark-chek"></span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <label class="checkbox-image --radio">
+                      <input type="radio" name="radio-tape" class="checkbox-image__input">
+                      <div class="checkbox-image__wrap">
+                        <div class="checkbox-image__img">
+                          <img src="./img/image-tape-4.png" alt="">
+                        </div>
+
+                        <div class="checkbox-image__mark">
+                          <span>Лайнер Elbtal Plastics</span>
+                          <span class="checkbox-image__mark-chek"></span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                </div>
+
+                <div class="tape-calc__slider-navigation">
+                  <div class="slider-arrow-prev"></div>
+                  <div class="slider-arrow-next"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator__parameter parameter-calc mb-50">
+            <div class="parameter-calc__wrap p-l-r-30">
+              <div class="parameter-calc__table">
+                <div class="parameter-calc__table-caption">
+                  <div class="parameter-calc__table-title">Технические характеристики бассейна</div>
+                </div>
+
+                <div class="parameter-calc__table-list">
+                  <div class="parameter-calc__table-item">
+                    <span>Объём бассейна</span>
+                    <span>32 м<sup>3</sup></span>
+                  </div>
+
+                  <div class="parameter-calc__table-item">
+                    <span>Периметр бассейна</span>
+                    <span>16 м</span>
+                  </div>
+
+                  <div class="parameter-calc__table-item">
+                    <span>Внутренний объём бассейна</span>
+                    <span>22.032 м<sup>3</sup></span>
+                  </div>
+
+                  <div class="parameter-calc__table-item">
+                    <span>Площадь зеркала воды</span>
+                    <span>16 м<sup>2</sup></span>
+                  </div>
+
+                  <div class="parameter-calc__table-item">
+                    <span>Площадь поверхности чаши</span>
+                    <span>48 м<sup>2</sup></span>
+                  </div>
+
+                  <div class="parameter-calc__table-item">
+                    <span>Производительность оборудования</span>
+                    <span>7.1 м<sup>3</sup>/ ч</span>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator__block-price block-price mb-50">
+            <div class="block-price__group-title mb-20 pb-20 border-b-3">
+              <div class="title-small-bold">Стоимость работ по строительству чаши</div>
+
+              <div class="block-price__price">485 300 руб.</div>
+            </div>
+
+            <div class="block-price__wrap p-l-r-30">
+              <div class="block-price__table table-price js-sort-container">
+                <div class="table-price__block">
+                  <div class="table-price__caption">
+                    <div class="table-price__title js-sort" data-sort-type="string" data-sort="3">Наименование</div>
+                    <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="1">Цена</div>
+                    <div class="table-price__title">Количество</div>
+                    <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="2">Цена за
+                      единицу
+                    </div>
+                  </div>
+
+                  <div class="table-price__list">
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Бетон М350В25W8">Бетон М350В25W8
+                      </div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="80 000">80 000 р.</div>
+                      <div class="table-price__field">16 м<sup>3</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="5000">5000 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Арматура АIII">Арматура АIII</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="90 000">90 000 р.</div>
+                      <div class="table-price__field">3 тонн</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="30000">30000 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Фанера влагостойкая ламинированная">
+                        Фанера влагостойкая ламинированная </div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="79 800">79 800 р.</div>
+                      <div class="table-price__field">38 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="2100">2100 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Брус 100х100мм">Брус 100х100мм
+                      </div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="5 500">5 500 р.</div>
+                      <div class="table-price__field">1 м<sup>3</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="5500">5500 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Доска обрезная 0,04х0,15х6,0м">
+                        Доска
+                        обрезная 0,04х0,15х6,0м</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="22 000">22 000 р.</div>
+                      <div class="table-price__field">4 м<sup>3</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="5500">5500 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Расходные материалы">Расходные
+                        материалы
+                      </div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="15 000">15 000 р.</div>
+                      <div class="table-price__field">3 компл</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="5500">5500 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Разгрузка и перенос материалов">
+                        Разгрузка и перенос материалов</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="14 000">14 000 р.</div>
+                      <div class="table-price__field">10 тонн</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1400">1400 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по устройству монолитной ж/б ванны бассейна">Работы по устройству
+                        монолитной
+                        ж/б ванны бассейна</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="144 000">144 000 р.</div>
+                      <div class="table-price__field">16 м<sup>3</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="9000">9000 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по устройству (римский вход)">
+                        Работы по устройству (римский вход)</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="0">0 р.</div>
+                      <div class="table-price__field">0 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="35000">35000 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Аренда бетононасоса при бетонировании ванны">Аренда бетононасоса при
+                        бетонировании
+                        ванны</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="0">0 р.</div>
+                      <div class="table-price__field">0 смен</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="5000">5000 р.</div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="calculator__block-price block-price mb-50">
+            <div class="block-price__group-title mb-20 pb-20 border-b-3">
+              <div class="title-small-bold">Стоимость работ по оштукатуриванию чаши</div>
+
+              <div class="block-price__price">157 253 руб.</div>
+            </div>
+
+            <div class="block-price__wrap p-l-r-30">
+              <div class="block-price__table table-price js-sort-container">
+                <div class="table-price__block">
+                  <div class="table-price__caption">
+                    <div class="table-price__title js-sort" data-sort-type="string" data-sort="3">Наименование</div>
+                    <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="1">Цена</div>
+                    <div class="table-price__title">Количество</div>
+                    <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="2">Цена за
+                      единицу
+                    </div>
+                  </div>
+
+                  <div class="table-price__list">
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Латексная добавка к штукатурной смеси">
+                        Латексная добавка к штукатурной смеси</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="46 273">46 273 р.</div>
+                      <div class="table-price__field">4 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="11 522">11 522 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Ц/П-смесь сухая универсальная, М150">
+                        Ц/П-смесь сухая универсальная, М150</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="11 200 р.">11 200 р.</div>
+                      <div class="table-price__field">64 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="175">175 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по выравниванию внутренней поверхностичаши штукатурным слоем до 20мм + заливка">
+                        Работы по выравниванию внутренней поверхностичаши штукатурным слоем до 20мм + заливка </div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="48 000">48 000 р.</div>
+                      <div class="table-price__field">48 м<sup>2</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1 000">1 000 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по выравниванию римского входа">
+                        Работы по выравниванию римского входа</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="0">0 р.</div>
+                      <div class="table-price__field">0 пг. м.</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1 200">1 200 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Клей для плитки Fixator (Мешок 25кг)">
+                        Клей для плитки Fixator (Мешок 25кг)</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="5 600">5 600 р.</div>
+                      <div class="table-price__field">14 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="400">400 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Разгрузка и перенос материалов">
+                        Разгрузка и перенос материалов
+                      </div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="5 980">5 980</div>
+                      <div class="table-price__field">2990 кг</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="2">2 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по выравниванию лотка переливаштукатурным слоем до 20мм">
+                        Работы по выравниванию лотка переливаштукатурным слоем до 20мм</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="25 200">25 200 р.</div>
+                      <div class="table-price__field">18 м <sup>3</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1400">1400 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Расходные материалы (маяки, шпателя, правила,фанера и т.д)">Расходные
+                        материалы
+                        (маяки, шпателя, правила,фанера и т.д)</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="15 200">15 200 р.</div>
+                      <div class="table-price__field">3 компл</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="5000">5000 р.</div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="calculator__block-price block-price mb-50">
+            <div class="block-price__group-title mb-20 pb-20 border-b-3">
+              <div class="title-small-bold">Стоимость работ по гидроизоляции чаши</div>
+
+              <div class="block-price__price">244 482 руб.</div>
+            </div>
+
+            <div class="block-price__wrap p-l-r-30">
+              <div class="block-price__table table-price js-sort-container">
+                <div class="table-price__block">
+                  <div class="table-price__caption">
+                    <div class="table-price__title js-sort" data-sort-type="string" data-sort="3">Наименование</div>
+                    <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="1">Цена</div>
+                    <div class="table-price__title">Количество</div>
+                    <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="2">Цена за
+                      единицу
+                    </div>
+                  </div>
+
+                  <div class="table-price__list">
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Гидроизоляция мембранного типа h=0,5мм">
+                        Гидроизоляция мембранного типа h=0,5мм</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="115 413">115 413 р.</div>
+                      <div class="table-price__field">3 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="38 319">38 319 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Гидробан">Гидробан</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="28 840">28 840 р.</div>
+                      <div class="table-price__field">1 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="28 726">28 726 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по гидроизоляции внутренней поверхности чашиэластичной мембраны в 2 слоя">
+                        Работы по гидроизоляции внутренней поверхности чашиэластичной мембраны в 2 слоя</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="55 200">55 200 р.</div>
+                      <div class="table-price__field">48 м<sup>2</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1 150">1 150 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Гидроиспытание">Гидроиспытание
+                      </div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="18 000">18 000 р.</div>
+                      <div class="table-price__field">1 компл</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="18 000">18 000 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Римский вход">Римский вход</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="0">0 р.</div>
+                      <div class="table-price__field">0 пг. м.</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1 150">1 150 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по нанесению на лоток перелива эластичной мембраны в 2 слоя">Работы по
+                        нанесению на лоток перелива эластичной мембраны в 2 слоя</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="55 200">55 200</div>
+                      <div class="table-price__field">18 пг. м</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1 150">1 150 р.</div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="calculator__block-price block-price mb-50">
+            <div class="block-price__group-title mb-20 pb-20 border-b-3">
+              <div class="title-small-bold">Стоимость работ по облицовке чаши</div>
+
+              <div class="block-price__price">327 318 руб.</div>
+            </div>
+
+            <div class="block-price__wrap p-l-r-30">
+              <div class="block-price__table table-price js-sort-container">
+                <div class="table-price__block">
+                  <div class="table-price__caption">
+                    <div class="table-price__title js-sort" data-sort-type="string" data-sort="3">Наименование</div>
+                    <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="1">Цена</div>
+                    <div class="table-price__title">Количество</div>
+                    <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="2">Цена за
+                      единицу
+                    </div>
+                  </div>
+
+                  <div class="table-price__list">
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Мозаика 'VIP' 20*20мм">Мозаика
+                        "VIP"
+                        20*20мм</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="436 776">436 776 р.</div>
+                      <div class="table-price__field">69 м<sup>2</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="6 305">6 305 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Латексная добавка – адгезив смеси">
+                        Латексная добавка – адгезив смеси</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="36 480">36 480 р.</div>
+                      <div class="table-price__field">3 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="12 112">12 112 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по укладке мозаики/плитки на подготовленную внутреннюю поверхность ванны бассейна">
+                        Работы по укладке мозаики/плитки на подготовленную внутреннюю поверхность ванны бассейна</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="110 400">110 400 р</div>
+                      <div class="table-price__field">48 м<sup>2</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="2 300">2 300 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Сухая смесь для получения клея">
+                        Сухая
+                        смесь для получения клея</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="8 394">8 394 р.</div>
+                      <div class="table-price__field">6 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1 393">1 393 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item" data-sort-value-3="Заполнитель швов">Заполнитель швов
+                      </div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="13 989">13 989 р.</div>
+                      <div class="table-price__field">10 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1 393">1 393 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Латексная добавка к заполнителю швов">
+                        Латексная добавка к заполнителю швов</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="16 142">16 142 р.</div>
+                      <div class="table-price__field">12 шт</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="1 340">1 340 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по укладке мозаики/плитки на подготовленный лоток перелива бассейна">
+                        Работы
+                        по укладке мозаики/плитки на подготовленный лоток перелива бассейна</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="41 400 ">41 400 р.</div>
+                      <div class="table-price__field">18 м<sup>2</sup></div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="2 300">2 300 р.</div>
+                    </div>
+
+                    <div class="table-price__item">
+                      <div class="table-price__field js-sort-item"
+                        data-sort-value-3="Работы по укладке мозаики/плитки (Римский вход)">Работы по укладке
+                        мозаики/плитки
+                        (Римский вход)</div>
+                      <div class="table-price__field js-sort-item --blue" data-sort-value-1="0">0 р.</div>
+                      <div class="table-price__field">0 пг. м.</div>
+                      <div class="table-price__field js-sort-item --gray" data-sort-value-2="2 300">2 300 р.</div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="calculator__additional additional-calc mb-50">
+            <div class="additional-calc__title title-main-bold mb-20">Выбор дополнительного оборудования</div>
+            <div class="additional-calc__subtitle subtitle mb-50 border-b-3 pb-20">При необходимости укажите
+              дополнительное
+              оборудование,<br>
+              которым хотите оснастить ваш бассейн.</div>
+
+            <div class="additional-calc__wrap">
+              <div class="additional-calc__group-price mb-20">
+                <div class="additional-calc__price-name">Стоимость дополнительного оборудования</div>
+                <div class="additional-calc__price-value">124 525 ₽</div>
+              </div>
+
+              <div class="additional-calc__list border-b-3 pb-20 mb-20">
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input checked type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Фильтрация</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+
+                      <div class="item-additional__bottom">
+                        <div class="item-additional__list">
+                          <div class="item-additional__item">
+                            <div class="item-additional__name">
+                              <span>Фильтр с хлоргенератором Intex (Китай)</span>
+                              <a href="#" class="item-additional__change js-show-popup-additional"
+                                data-value-popup="additional">Изменить</a>
+                            </div>
+
+                            <div class="item-additional__price">124 525 ₽</div>
+                          </div>
+
+                          <div class="item-additional__item">
+                            <div class="item-additional__name">
+                              <span>Фильтр с хлоргенератором</span>
+                              <a href="#" class="item-additional__change js-show-popup-additional"
+                                data-value-popup="additional">Изменить</a>
+                            </div>
+
+                            <div class="item-additional__price">12 525 ₽</div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Освещение</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Дезенфекция</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Подогрев/Холод</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Закладные</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Аттракционы</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Пылесос</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Покрытие</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Контроль влажности</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="additional-calc__item">
+                  <div class="item-additional">
+                    <div class="item-additional__check">
+                      <label class="check-add">
+                        <input type="checkbox" disabled>
+                        <div class="check-add__mark"></div>
+                      </label>
+                    </div>
+
+                    <div class="item-additional__group">
+                      <div class="item-additional__top">
+                        <div class="item-additional__name"><span>Контроль воды</span></div>
+                        <a href="#" class="item-additional__btn js-show-popup-additional"
+                          data-value-popup="additional">Настроить</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="additional-calc__result resutl-calc">
+                <a href="#" class="resutl-calc__execl mb-20">Экспорт в Excel</a>
+
+                <div class="resutl-calc__name">Стоимость бассейна со всеми опциями</div>
+
+                <div class="resutl-calc__group-price mb-20">
+                  <div class="resutl-calc__price">1 340 734 ₽</div>
+                  <a href="#" class="resutl-calc__detail js-toggle" data-toggle="detail-list">Детали</a>
+                </div>
+
+                <div class="resutl-calc__list-toggle pt-20 border-b-1" data-lsit-toggle="detail-list">
+                  <div class="resutl-calc__list ">
+                    <div class="resutl-calc__item">
+                      <span>Стоимость работ по строительству чаши</span>
+                      <span>485 300 ₽</span>
+                    </div>
+
+                    <div class="resutl-calc__item">
+                      <span>Стоимость работ по оштукатуриванию чаши</span>
+                      <span>157 253 ₽</span>
+                    </div>
+
+                    <div class="resutl-calc__item">
+                      <span>Стоимость работ по гидроизоляции чаши</span>
+                      <span>244 482 ₽</span>
+                    </div>
+
+                    <div class="resutl-calc__item">
+                      <span>Стоимость работ по облицовке чаши</span>
+                      <span>327 318 ₽</span>
+                    </div>
+
+                    <div class="resutl-calc__item">
+                      <span>Фильтрация</span>
+                      <span>124 525 ₽ </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="resutl-calc__buttons mt-20">
+                  <a href="#" class="resutl-calc__btn btn-bg">ЗАКАЗАТЬ БАССЕЙН</a>
+                  <div class="resutl-calc__fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M21.2029 6.2505C22.1995 5.83755 23.2677 5.625 24.3465 5.625C25.4253 5.625 26.4935 5.83755 27.4902 6.2505C28.4868 6.66346 29.3923 7.26873 30.155 8.03173C30.9178 8.7943 31.5229 9.69967 31.9358 10.6961C32.3488 11.6928 32.5613 12.761 32.5613 13.8398C32.5613 14.9186 32.3488 15.9868 31.9358 16.9835C31.5229 17.98 30.9177 18.8854 30.1548 19.6481L28.7935 21.0093L17.9678 32.0903L7.14219 21.0094L5.78086 19.6481C4.24041 18.1076 3.375 16.0183 3.375 13.8398C3.375 11.6613 4.24041 9.57199 5.78086 8.03155C7.3213 6.4911 9.41059 5.62569 11.5891 5.62569C13.7676 5.62569 15.8569 6.4911 17.3974 8.03155L17.9678 8.602L18.5381 8.03173C19.3007 7.26882 20.2063 6.66343 21.2029 6.2505ZM24.3465 7.875C23.5633 7.875 22.7877 8.02932 22.0641 8.32913C21.3406 8.62895 20.6831 9.06839 20.1294 9.62235L17.9678 11.784L15.8064 9.62254C14.6879 8.50405 13.1709 7.87569 11.5891 7.87569C10.0073 7.87569 8.49034 8.50405 7.37185 9.62254C6.25336 10.741 5.625 12.258 5.625 13.8398C5.625 15.4216 6.25336 16.9386 7.37185 18.0571L8.74706 19.4323L17.9678 28.8706L27.1978 19.423L28.5638 18.0571C29.1177 17.5034 29.5574 16.8458 29.8572 16.1222C30.157 15.3986 30.3113 14.623 30.3113 13.8398C30.3113 13.0566 30.157 12.281 29.8572 11.5574C29.5574 10.8338 29.1179 10.1764 28.564 9.62272C28.0103 9.06876 27.3525 8.62895 26.6289 8.32913C25.9053 8.02932 25.1298 7.875 24.3465 7.875Z"
+                        fill="#008BFF" />
+                      <path
+                        d="M22.0641 8.32913C22.7877 8.02932 23.5633 7.875 24.3465 7.875C25.1298 7.875 25.9053 8.02932 26.6289 8.32913C27.3525 8.62895 28.0103 9.06876 28.564 9.62272C29.1179 10.1764 29.5574 10.8338 29.8572 11.5574C30.157 12.281 30.3113 13.0566 30.3113 13.8398C30.3113 14.623 30.157 15.3986 29.8572 16.1222C29.5574 16.8458 29.1177 17.5034 28.5638 18.0571L27.1978 19.423L17.9678 28.8706L8.74706 19.4323L7.37185 18.0571C6.25336 16.9386 5.625 15.4216 5.625 13.8398C5.625 12.258 6.25336 10.741 7.37185 9.62254C8.49034 8.50405 10.0073 7.87569 11.5891 7.87569C13.1709 7.87569 14.6879 8.50405 15.8064 9.62254L17.9678 11.784L20.1294 9.62235C20.6831 9.06839 21.3406 8.62895 22.0641 8.32913Z" />
+                    </svg>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="calculator__banner banner-calc">
+            <div class="banner-calc__wrap p-l-r-30 p-t-b-30">
+              <div class="banner-calc__title title-main-bold mb-20">Есть свой проект?</div>
+              <div class="banner-calc__subtitle subtitle mb-20 ">Для расчёта стоимоти вашего дизайн-проекта <a
+                  href="#">заполните форму</a>.<br> Наши специалисты свяжутся с вами в течение 3-х рабочих дней.</div>
+
+              <div class="banner-calc__buttons">
+                <a href="#" class="banner-calc__link main-btn">Заказать проект</a>
+                <a href="#" class="banner-calc__link main-btn">Прикрепить проект</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="popup-additional" data-popup="additional">
+  <div class="wrapper">
+    <div class="popup-additional__wrap">
+      <div class="popup-additional__colose"></div>
+
+      <div class="popup-additional__title title-main-bold mb-20">Конфигуратор фильтров</div>
+
+      <div class="popup-additional__slider swiper mb-50">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="popup-additional__item active">Фильтрация</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Освещение</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Дезенфекция</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Подогрев/Холод</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Закладные</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Аттракционы</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Пылесос</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Покрытие</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Контроль влажности</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Фильтрация</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Освещение</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Дезенфекция</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Подогрев/Холод</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Закладные</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Аттракционы</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Пылесос</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Покрытие</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="popup-additional__item">Контроль влажности</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-additional__equipment additional-equipment mb-50">
+        <div class="additional-equipment__name mb-20">Выберите комплектацию</div>
+
+        <div class="additional-equipment__list">
+
+          <div class="additional-equipment__item">
+            <label class="additional-radio">
+              <input checked type="radio" name="additional-radio">
+              <div class="additional-radio__wrap">
+                <div class="additional-radio__mark"></div>
+                <div class="additional-radio__name">Фильтр с хлоргенератором Intex (Китай) </div>
+              </div>
+            </label>
+          </div>
+
+          <div class="additional-equipment__item">
+            <label class="additional-radio">
+              <input type="radio" name="additional-radio">
+              <div class="additional-radio__wrap">
+                <div class="additional-radio__mark"></div>
+                <div class="additional-radio__name">Фильтр с хлоргенератором Intex (Китай) без теплообменника</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="additional-equipment__item">
+            <label class="additional-radio">
+              <input type="radio" name="additional-radio">
+              <div class="additional-radio__wrap">
+                <div class="additional-radio__mark"></div>
+                <div class="additional-radio__name">Фильтр Intex (Китай) </div>
+              </div>
+            </label>
+          </div>
+
+          <div class="additional-equipment__item">
+            <label class="additional-radio">
+              <input type="radio" name="additional-radio">
+              <div class="additional-radio__wrap">
+                <div class="additional-radio__mark"></div>
+                <div class="additional-radio__name">Фильтр Intex (Китай) без теплообменника</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="additional-equipment__item">
+            <label class="additional-radio">
+              <input type="radio" name="additional-radio">
+              <div class="additional-radio__wrap">
+                <div class="additional-radio__mark"></div>
+                <div class="additional-radio__name">Фильтрация AquaViva</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="additional-equipment__item">
+            <label class="additional-radio">
+              <input type="radio" name="additional-radio">
+              <div class="additional-radio__wrap">
+                <div class="additional-radio__mark"></div>
+                <div class="additional-radio__name">Фильтр Emaux</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="additional-equipment__item">
+            <label class="additional-radio">
+              <input type="radio" name="additional-radio">
+              <div class="additional-radio__wrap">
+                <div class="additional-radio__mark"></div>
+                <div class="additional-radio__name">Фильтр Kripsol (Испания)</div>
+              </div>
+            </label>
+          </div>
+
+          <div class="additional-equipment__item">
+            <label class="additional-radio">
+              <input type="radio" name="additional-radio">
+              <div class="additional-radio__wrap">
+                <div class="additional-radio__mark"></div>
+                <div class="additional-radio__name">Дренаж технического помещения</div>
+              </div>
+            </label>
+          </div>
+
+        </div>
+
+        <div class="additional-equipment__result">
+          <div class="additional-equipment__group">
+            <div class="additional-equipment__price-name">Стоимость со всеми опциями</div>
+            <div class="additional-equipment__price-value">124 525 ₽</div>
+
+            <a href="#" class="additional-equipment__btn btn-bg">Сохранить комплектацию</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="popup-additional__block-price block-price">
+        <div class="block-price__group-title mb-20 pb-20 border-b-3">
+          <div class="title-small-bold">Детали</div>
+        </div>
+
+        <div class="block-price__wrap">
+          <div class="block-price__table table-price js-sort-container">
+            <div class="table-price__block">
+              <div class="table-price__caption">
+                <div class="table-price__title js-sort" data-sort-type="string" data-sort="3">Наименование</div>
+                <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="1">Цена</div>
+                <div class="table-price__title">Количество</div>
+                <div class="table-price__title js-sort --price" data-sort-type="number" data-sort="2">Цена за единицу
+                </div>
+              </div>
+
+              <div class="table-price__list">
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item"
+                    data-sort-value-3="Муфта разьемная с внешней рез.50/1 1/2">
+                    Муфта разьемная с внешней рез.50/1 1/2</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="9 750">9 750 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="1 950">1 950 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item" data-sort-value-3="Муфта с внутр. резьбой д. 63/50-2">
+                    Муфта
+                    с внутр. резьбой д. 63/50-2</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="1 638">1 638 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="546">546 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item"
+                    data-sort-value-3="Обезжириватель 0.5л Coraplax (7620500)">
+                    Обезжириватель 0.5л Coraplax (7620500)</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="624">624 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="624">624 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item" data-sort-value-3="Муфта разъемная д. 50 (7414050)">Муфта
+                    разъемная д. 50 (7414050)</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="3 120">3 120 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="624">624 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item"
+                    data-sort-value-3="Кабель для подключения электрооборудования 3х1,5">Кабель для подключения
+                    электрооборудования 3х1,5</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="195">195 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="195">195 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item" data-sort-value-3="Угольник 90 гр. д.50 (7101050)">
+                    Угольник
+                    90 гр. д.50 (7101050)</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="1 560">1 560 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="156">156 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item" data-sort-value-3="Обратный клапан д.50">Обратный клапан
+                    д.50</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="3 120">3 120 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="3 120">3 120 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item" data-sort-value-3="Клей">Клей</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="858">858 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="858">858 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item" data-sort-value-3="Труба д.50">Труба д.50</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="3 000">3 000 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="250">250 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item"
+                    data-sort-value-3="28646 Фильтр-насос для бассейна Intex, песчаный 6000 л/ч">28646 Фильтр-насос для
+                    бассейна Intex, песчаный 6000 л/ч</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="30 420">30 420 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="30 420">30 420 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item" data-sort-value-3="Держатель труб д. 50 металлический">
+                    Держатель труб д. 50 металлический</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="468">468 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="78">78 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item" data-sort-value-3="Диф автомат 220 10 А">Диф автомат 220
+                    10
+                    А</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="6 240">6 240 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="6 240">6 240 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item" data-sort-value-3="Бокс для автомата">Бокс для автомата
+                  </div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="2 340">2 340 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="2 340">2 340 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item"
+                    data-sort-value-3="28680 Хлорогенератор с фильтр-насосом Intex, песчаный 10000 л/ч">28680
+                    Хлорогенератор с фильтр-насосом Intex, песчаный 10000 л/ч</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="58 500">58 500 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="58 500">58 500 р.</div>
+                </div>
+
+                <div class="table-price__item">
+                  <div class="table-price__field js-sort-item"
+                    data-sort-value-3="Песок кварцевый для систем фильтрации 25 кг">Песок кварцевый для систем
+                    фильтрации
+                    25 кг</div>
+                  <div class="table-price__field js-sort-item --blue" data-sort-value-1="1 720">1 720 р.</div>
+                  <div class="table-price__field">
+                    <input type="text">
+                  </div>
+                  <div class="table-price__field js-sort-item --gray" data-sort-value-2="860">860 р.</div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+@@include("../components/_footer.html")

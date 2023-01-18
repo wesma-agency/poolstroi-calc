@@ -1,0 +1,280 @@
+.nice-select {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	box-sizing: border-box;
+	clear: both;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	font-family: inherit;
+	font-weight: 350;
+	font-size: 16px;
+	color: #444444;
+	line-height: 150%;
+	outline: none;
+	min-height: 56px;
+	padding: 5px 20px 5px 20px;
+	position: relative;
+	text-align: left !important;
+	transition: all 0.2s ease-in-out;
+	user-select: none;
+	width: 100%;
+	border-radius: 30px;
+}
+
+.nice-select .current {
+	padding-right: 30px;
+}
+
+.nice-select:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	width: 24px;
+	height: 24px;
+	background: url("../img/icon-select.svg") no-repeat;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.nice-select.open:after {
+	/* -webkit-transform: translate(0, -50%) rotate(-180deg);
+	-ms-transform: translate(0, -50%) rotate(-180deg);
+	transform: translate(0, -50%) rotate(-180deg); */
+}
+
+.nice-select.open .nice-select-dropdown {
+	opacity: 1;
+	pointer-events: auto;
+	transform: scale(1) translateY(0);
+}
+
+.nice-select.disabled {
+	border-color: #ededed;
+	color: #999;
+	pointer-events: none;
+}
+
+.nice-select.disabled:after {
+	border-color: #ccc;
+}
+
+.nice-select.wide {
+	width: 100%;
+}
+
+.nice-select.wide .nice-select-dropdown {
+	left: 0 !important;
+	right: 0 !important;
+}
+
+.nice-select.right {
+	float: right;
+}
+
+.nice-select.right .nice-select-dropdown {
+	left: auto;
+	right: 0;
+}
+
+.nice-select.small {
+	font-size: 12px;
+	height: 36px;
+	line-height: 34px;
+}
+
+.nice-select.small:after {
+	height: 4px;
+	width: 4px;
+}
+
+.nice-select.small .option {
+	line-height: 34px;
+	min-height: 34px;
+}
+
+.nice-select .nice-select-dropdown {
+	width: 100%;
+	margin-top: 4px;
+	background-color: #fff;
+	pointer-events: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transform-origin: 50% 0;
+	transform: scale(0.75) translateY(19px);
+	transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+	z-index: 9;
+	opacity: 0;
+}
+
+.nice-select .list {
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 0;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+	background-color: transparent !important;
+}
+
+.nice-select .option {
+	position: relative;
+	cursor: pointer;
+	font-weight: 400;
+	line-height: 140%;
+	list-style: none;
+	outline: none;
+	padding: 13px 25px 13px 25px;
+	text-align: left;
+	transition: all 0.2s;
+}
+
+.nice-select .option::before {
+	content: "";
+	position: absolute;
+	right: 25px;
+	left: 25px;
+	bottom: 0;
+	height: 1px;
+	background: #ecf0f8;
+}
+
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+	background: #f4f6fb;
+}
+
+.nice-select .option.disabled {
+	background-color: transparent;
+	color: #999;
+	cursor: default;
+}
+
+.nice-select .optgroup {
+	font-weight: bold;
+}
+
+.no-csspointerevents .nice-select .nice-select-dropdown {
+	display: none;
+}
+
+.no-csspointerevents .nice-select.open .nice-select-dropdown {
+	display: block;
+}
+
+.device-apple .nice-select .list::-webkit-scrollbar,
+.bx-android .nice-select .list::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+
+.device-apple .nice-select .list::-webkit-scrollbar:vertical,
+.bx-android .nice-select .list::-webkit-scrollbar:vertical {
+	width: 18px;
+}
+
+.device-apple .nice-select .list::-webkit-scrollbar:horizontal,
+.bx-android .nice-select .list::-webkit-scrollbar:horizontal {
+	height: 18px;
+}
+
+.device-apple .nice-select .list::-webkit-scrollbar-thumb,
+.bx-android .nice-select .list::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	border: 7px solid #ffffff;
+}
+
+.device-apple .nice-select .list::-webkit-scrollbar-track,
+.bx-android .nice-select .list::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+
+.device-apple .nice-select .list .os-scrollbar-vertical {
+	right: 4px;
+}
+
+.device-apple .nice-select .list.os-theme-dark > .os-scrollbar {
+	padding: 3px;
+}
+
+@media (max-width: 1200px) {
+	.nice-select .list::-webkit-scrollbar {
+		-webkit-appearance: none;
+	}
+	.nice-select .list::-webkit-scrollbar:vertical {
+		width: 18px;
+	}
+	.nice-select .list::-webkit-scrollbar:horizontal {
+		height: 18px;
+	}
+	.nice-select .list::-webkit-scrollbar-thumb {
+		background-color: rgba(0, 0, 0, 0.3);
+		border-radius: 10px;
+		border: 7px solid #ffffff;
+	}
+	.nice-select .list::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background-color: #ffffff;
+	}
+}
+
+.nice-select .has-multiple {
+	white-space: inherit;
+	height: auto;
+	padding: 7px 12px;
+	min-height: 36px;
+	line-height: 22px;
+}
+
+.nice-select .has-multiple span.current {
+	border: 1px solid #ccc;
+	background: #eee;
+	padding: 0 10px;
+	border-radius: 3px;
+	display: inline-block;
+	line-height: 24px;
+	font-size: 14px;
+	margin-bottom: 3px;
+	margin-right: 3px;
+}
+
+.nice-select .has-multiple .multiple-options {
+	display: block;
+	line-height: 24px;
+	padding: 0;
+}
+
+.nice-select .nice-select-search-box {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 5px;
+	pointer-events: none;
+	border-radius: 5px 5px 0 0;
+}
+
+.nice-select .nice-select-search {
+	box-sizing: border-box;
+	background-color: #fff;
+	border: 1px solid #e8e8e8;
+	border-radius: 3px;
+	color: #444;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 7px 12px;
+	margin: 0 10px 0 0;
+	width: 100%;
+	min-height: 36px;
+	line-height: 22px;
+	height: auto;
+	outline: 0 !important;
+	font-size: 14px;
+}
