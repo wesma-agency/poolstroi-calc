@@ -240,3 +240,69 @@ document.addEventListener("click", function (e) {
 		document.querySelector("body").classList.remove("lock");
 	}
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	// Открытие попапов МОЖНО УДАЛЯТЬ
+	let popupAllElem = Array.prototype.slice.call(document.querySelectorAll(".modal"));
+	let openButton = Array.prototype.slice.call(document.querySelectorAll(".js-modal-show"));
+	let closeButton = Array.prototype.slice.call(document.querySelectorAll(".js-modal-close"));
+	let popupOverlay = document.querySelector(".popup-overlay");
+	let body = document.querySelector("body");
+
+	function openPopup(e) {
+		e.preventDefault();
+		let modal = document.querySelector(`#${e.target.dataset.popup}`);
+		modal.classList.add("active");
+		popupOverlay.classList.add("active");
+		body.classList.add("lock");
+
+		setTimeout(() => {
+			modal.style.opacity = "1";
+			popupOverlay.style.opacity = "1";
+		}, 100);
+	}
+
+	function closePopup() {
+		popupAllElem.forEach((element) => {
+			if (element.classList.contains("active")) {
+				let modal = element;
+
+				setTimeout(() => {
+					modal.classList.remove("active");
+					popupOverlay.classList.remove("active");
+				}, 300);
+				modal.style.opacity = "0";
+				popupOverlay.style.opacity = "0";
+				body.classList.remove("lock");
+			}
+		});
+	}
+
+	if (openButton != null) {
+		openButton.forEach((element) => {
+			element.addEventListener("click", (e) => {
+				closePopup(e);
+
+				openPopup(e);
+			});
+		});
+	}
+
+	if (closeButton != null) {
+		closeButton.forEach((element) => {
+			element.addEventListener("click", (e) => {
+				closePopup();
+			});
+		});
+	}
+
+	if (popupAllElem != null) {
+		popupAllElem.forEach((element) => {
+			element.addEventListener("click", (e) => {
+				if (e.target.parentNode.classList.contains("modal")) {
+					closePopup();
+				}
+			});
+		});
+	}
+});

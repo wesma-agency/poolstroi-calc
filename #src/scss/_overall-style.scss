@@ -90,8 +90,16 @@ body {
 	margin-top: 20px;
 }
 
+.mt-30 {
+	margin-top: 30px;
+}
+
 .pb-20 {
 	padding-bottom: 20px;
+}
+
+.pb-30 {
+	padding-bottom: 30px;
 }
 
 .pt-20 {
@@ -126,12 +134,20 @@ body {
 		padding-right: 10px;
 	}
 
+	.pt-20 {
+		padding-top: 15px;
+	}
+
 	.mb-50 {
 		margin-bottom: 30px;
 	}
 
 	.mb-30 {
 		margin-bottom: 15px;
+	}
+
+	.mt-30 {
+		margin-top: 15px;
 	}
 }
 
@@ -156,6 +172,10 @@ body {
 	&__wrapper {
 		position: relative;
 		border: 1px solid #d7d9db;
+		& textarea {
+			resize: none;
+			min-height: 110px;
+		}
 	}
 
 	&__name {
@@ -274,6 +294,22 @@ body {
 		& .input-ui__wrapper {
 			@include icon("../img/icon-geopos.svg", 25px, 25px, 50%, 20px, "initial", "initial");
 		}
+	}
+
+	&__file {
+		& input {
+			display: none;
+		}
+	}
+
+	&__file-mark {
+		cursor: pointer;
+		padding: 18px 45px 20px 20px;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 110%;
+		color: #008bff;
+		@include icon("../img/icon-file.svg", 20px, 20px, 50%, 20px, initial, initial);
 	}
 }
 

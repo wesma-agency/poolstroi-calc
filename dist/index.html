@@ -21,9 +21,7 @@
   <!-- HEADER -->
 
   <header class="header">
-    <div class="container">
-
-      
+    <div class="wrapper">
 
     </div>
   </header>
@@ -1729,10 +1727,232 @@
   </div>
 </div>
 
+<div class="popup-order modal" id="popup-order-one">
+  <div class="popup-order__wrap">
+    <div class="popup-order__body">
+      <div class="popup-order__group-title border-b-3 pb-20 mb-20">
+        <div class="popup-order__title title-small-bold">Закажите свой проект бассейна</div>
+        <div class="popup-order__close js-modal-close"></div>
+      </div>
+
+      <div class="popup-order__list border-b-3 pb-30 mb-30">
+        <div class="popup-order__item input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Телефон*</div>
+            <input type="tel" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Email*</div>
+            <input type="text" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Имя*</div>
+            <input type="text" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item input-ui --lsit --city">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Брянск</div>
+            <input type="text" class="input-ui__field">
+            <div class="input-ui__list-wrapper">
+              <ul class="input-ui__list">
+                <li class="input-ui__list-item">Брянская область</li>
+                <li class="input-ui__list-item">улица Брянцева, Санкт-Петербург</li>
+                <li class="input-ui__list-item">улица Брянцева, 13к1, Санкт-Петербург</li>
+                <li class="input-ui__list-item">станция Брянск-1-Орловский, Московская железная дорога</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup-order__list-size border-b-3">
+        <div class="popup-order__item-size input-ui js-side-input" data-side="long">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Длина, м*</div>
+            <input type="text" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item-size input-ui js-side-input" data-side="width">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Ширина, м*</div>
+            <input type="text" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item-size input-ui js-side-input" data-side="depth">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Глубина, м*</div>
+            <input type="text" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item-size input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Тип бассейна*</div>
+            <select>
+              <option selected value="Частный">Частный</option>
+              <option value="Детский">Детский</option>
+              <option value="Общественный">Общественный</option>
+              <option value="Оздоровительный">Оздоровительный</option>
+              <option value="Спортивный">Спортивный</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="popup-order__item-size input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Наличие мелкой зоны</div>
+            <div class="input-ui__list-radio">
+              <label class="input-ui__radio-label">
+                <input checked type="radio" name="radio-zone-1" class="input-ui__radio">
+                <div class="input-ui__radio-mark">Да</div>
+              </label>
+
+              <label class="input-ui__radio-label">
+                <input type="radio" name="radio-zone-1" class="input-ui__radio">
+                <div class="input-ui__radio-mark">Нет</div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-order__item-size input-ui js-side-input" data-side="width-small">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Длина мелкой зоны, м*</div>
+            <input type="text" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item-size input-ui js-side-input" data-side="depth-small">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Глубина мелкой зоны, м*</div>
+            <input type="text" class="input-ui__field">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="popup-order__list-textarea mt-30">
+        <div class="popup-order__item-textarea input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Оставьте комментарий</div>
+            <textarea class="input-ui__field" placeholder="Комментарий"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="popup-order__link main-btn">Заказать проект</a>
+
+    </div>
+  </div>
+</div>
+
+<div class="popup-order modal" id="popup-order-two">
+  <div class="popup-order__wrap">
+    <div class="popup-order__body">
+      <div class="popup-order__group-title border-b-3 pb-20 mb-20">
+        <div class="popup-order__title title-small-bold">Прикрепите свой проект бассейна</div>
+        <div class="popup-order__close js-modal-close"></div>
+      </div>
+
+      <div class="popup-order__list border-b-3 pb-30 mb-30">
+        <div class="popup-order__item input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Телефон*</div>
+            <input type="tel" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Email*</div>
+            <input type="text" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Имя*</div>
+            <input type="text" class="input-ui__field">
+          </div>
+        </div>
+
+        <div class="popup-order__item input-ui --lsit --city">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Брянск</div>
+            <input type="text" class="input-ui__field">
+            <div class="input-ui__list-wrapper">
+              <ul class="input-ui__list">
+                <li class="input-ui__list-item">Брянская область</li>
+                <li class="input-ui__list-item">улица Брянцева, Санкт-Петербург</li>
+                <li class="input-ui__list-item">улица Брянцева, 13к1, Санкт-Петербург</li>
+                <li class="input-ui__list-item">станция Брянск-1-Орловский, Московская железная дорога</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup-order__item input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Эскизный проект</div>
+            <select>
+              <option selected value="Эскизный проект 2">Эскизный проект 2</option>
+              <option value="Эскизный проект 3">Эскизный проект 3</option>
+              <option value="Эскизный проект 4">Эскизный проект 4</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="popup-order__item input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Прикрепите ваш проект</div>
+            <label class="input-ui__file">
+              <input type="file" class="input-ui__field">
+              <div class="input-ui__file-mark">Выберите файлы</div>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="popup-order__list-textarea mt-30">
+        <div class="popup-order__item-textarea input-ui">
+          <div class="input-ui__wrapper">
+            <div class="input-ui__name">Оставьте комментарий</div>
+            <textarea class="input-ui__field" placeholder="Комментарий"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="popup-order__link main-btn">Заказать проект</a>
+
+    </div>
+  </div>
+</div>
+
+<div class="popup-overlay js-modal-close"></div>
+
 <!-- FOOTER -->
 
 <footer class="footer" style="height: 300px;">
-  <div class="container"></div>
+  <div class="wrapper">
+    <div style="max-width: 400px; margin: 50px auto;">
+      <a href="#" class="main-btn js-modal-show" data-popup="popup-order-one" style="margin-bottom: 20px;">Попап -
+        Прикрепите свой
+        проект бассейна</a>
+      <a href="#" class="main-btn js-modal-show" data-popup="popup-order-two">Попап - Закажите свой проект бассейна</a>
+    </div>
+
+  </div>
 </footer>
 
 <!-- // FOOTER -->
