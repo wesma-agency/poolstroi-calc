@@ -904,6 +904,8 @@ body.lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 calc(100% / 3 - 20px);
             flex: 0 1 calc(100% / 3 - 20px); }
+  .size-calc__item.disabled {
+    opacity: 0.5; }
   .size-calc__item.--show .input-ui__wrapper {
     border-color: #008bff; }
   .size-calc__item .input-ui__wrapper {
@@ -968,6 +970,10 @@ body.lock {
     background: #008bff; }
     .size-calc__dot.--show .size-calc__dot-marker::before {
       background: #eef4f9; }
+  .size-calc__dot.small-zone {
+    display: none; }
+    .size-calc__dot.small-zone.show {
+      display: block; }
 
 .size-calc__dot-name {
   position: absolute;
@@ -1026,6 +1032,14 @@ body.lock {
     -webkit-transition: all 0.15s ease-in;
     -o-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in; }
+    .size-calc__svg path.small-zone {
+      display: none; }
+      .size-calc__svg path.small-zone.show {
+        display: block; }
+    .size-calc__svg path.standart-zone {
+      display: none; }
+      .size-calc__svg path.standart-zone.show {
+        display: block; }
   .size-calc__svg path.--show {
     fill: #008bff; }
 

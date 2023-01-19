@@ -67,6 +67,65 @@ document.addEventListener("DOMContentLoaded", function () {
 	let dotSide = Array.prototype.slice.call(document.querySelectorAll(".js-side-dot"));
 	let lineSide = Array.prototype.slice.call(document.querySelectorAll(".js-line-side"));
 
+	let radioZone = document.querySelectorAll(".js-zone");
+	let elSmallZone = document.querySelectorAll(".small-zone");
+	let elStandartZone = document.querySelectorAll(".standart-zone");
+
+	function changeZone(input) {
+		let idZone = input.getAttribute("data-zone");
+		if (idZone === "small") {
+			elSmallZone.forEach((el) => {
+				el.classList.add("show");
+			});
+
+			elStandartZone.forEach((el) => {
+				el.classList.remove("show");
+			});
+
+			inputSide.forEach((element) => {
+				let dataInputZone = element.getAttribute("data-side");
+
+				if (dataInputZone == "width-small" || dataInputZone == "depth-small") {
+					element.classList.remove("disabled");
+					element.querySelector("input").disabled = false;
+				}
+			});
+		}
+
+		if (idZone === "standart") {
+			elSmallZone.forEach((el) => {
+				el.classList.remove("show");
+			});
+
+			elStandartZone.forEach((el) => {
+				el.classList.add("show");
+			});
+
+			inputSide.forEach((element) => {
+				let dataInputZone = element.getAttribute("data-side");
+
+				if (dataInputZone == "width-small" || dataInputZone == "depth-small") {
+					element.classList.add("disabled");
+					element.querySelector("input").disabled = true;
+				}
+			});
+		}
+	}
+
+	if (radioZone.length > 0 && elSmallZone.length > 0 && elStandartZone.length > 0) {
+		radioZone.forEach((element) => {
+			if (element.checked === true) {
+				changeZone(element);
+			}
+		});
+	}
+
+	radioZone.forEach((element) => {
+		element.addEventListener("change", function () {
+			changeZone(this);
+		});
+	});
+
 	// Позиция надписей
 	function hintPosition() {
 		if (dotSide.length > 0) {

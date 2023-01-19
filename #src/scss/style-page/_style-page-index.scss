@@ -227,6 +227,10 @@
 			flex: 0 1 calc(100% / 3 - 20px);
 		}
 
+		&.disabled {
+			opacity: 0.5;
+		}
+
 		&.--show {
 			& .input-ui__wrapper {
 				border-color: #008bff;
@@ -288,6 +292,12 @@
 				}
 			}
 		}
+		&.small-zone {
+			display: none;
+			&.show {
+				display: block;
+			}
+		}
 	}
 
 	&__dot-name {
@@ -346,6 +356,19 @@
 		width: 100%;
 		& path {
 			transition: all 0.15s ease-in;
+			&.small-zone {
+				display: none;
+				&.show {
+					display: block;
+				}
+			}
+
+			&.standart-zone {
+				display: none;
+				&.show {
+					display: block;
+				}
+			}
 		}
 
 		& path.--show {

@@ -107,7 +107,7 @@
 
               <div class="contact-calc__item input-ui --lsit --city">
                 <div class="input-ui__wrapper">
-                  <div class="input-ui__name">Брянск</div>
+                  <div class="input-ui__name">Город</div>
                   <input type="text" class="input-ui__field">
                   <div class="input-ui__list-wrapper">
                     <ul class="input-ui__list">
@@ -162,6 +162,25 @@
                       </div>
                     </div>
 
+                    <div class="size-calc__item input-ui">
+                      <div class="input-ui__wrapper">
+                        <div class="input-ui__name">Наличие мелкой зоны</div>
+                        <div class="input-ui__list-radio">
+                          <label class="input-ui__radio-label">
+                            <input checked type="radio" name="radio-zone-1" class="input-ui__radio js-zone"
+                              data-zone="small">
+                            <div class="input-ui__radio-mark">Да</div>
+                          </label>
+
+                          <label class="input-ui__radio-label">
+                            <input type="radio" name="radio-zone-1" class="input-ui__radio js-zone"
+                              data-zone="standart">
+                            <div class="input-ui__radio-mark">Нет</div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
                     <div class="size-calc__item input-ui js-side-input" data-side="width-small">
                       <div class="input-ui__wrapper">
                         <div class="input-ui__name">Длина мелкой зоны, м*</div>
@@ -169,22 +188,6 @@
                       </div>
                     </div>
 
-                    <div class="size-calc__item input-ui">
-                      <div class="input-ui__wrapper">
-                        <div class="input-ui__name">Наличие мелкой зоны</div>
-                        <div class="input-ui__list-radio">
-                          <label class="input-ui__radio-label">
-                            <input checked type="radio" name="radio-zone-1" class="input-ui__radio">
-                            <div class="input-ui__radio-mark">Да</div>
-                          </label>
-
-                          <label class="input-ui__radio-label">
-                            <input type="radio" name="radio-zone-1" class="input-ui__radio">
-                            <div class="input-ui__radio-mark">Нет</div>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
 
                     <div class="size-calc__item input-ui js-side-input" data-side="depth-small">
                       <div class="input-ui__wrapper">
@@ -228,14 +231,15 @@
                         <div class="size-calc__dot-marker"></div>
                       </div>
 
-                      <div class="size-calc__dot js-side-dot" data-side="depth-small" style="top: 45%; left: 85%;">
+                      <div class="size-calc__dot js-side-dot small-zone" data-side="depth-small"
+                        style="top: 45%; left: 85%;">
                         <div class="size-calc__dot-name">
                           Глубина мелкой зоны
                         </div>
                         <div class="size-calc__dot-marker"></div>
                       </div>
 
-                      <div class="size-calc__dot --left js-side-dot" data-side="width-small"
+                      <div class="size-calc__dot --left js-side-dot small-zone" data-side="width-small"
                         style="top:66%; left: 73%;">
                         <div class="size-calc__dot-name">
                           Длина мелкой зоны
@@ -255,14 +259,14 @@
                       <path
                         d="M380.256 0.211914L335.582 48.7904C335.208 49.1969 335.234 49.8295 335.641 50.2034L336.377 50.8803L380.374 3.03786C381.122 2.22483 381.069 0.959608 380.256 0.211914Z"
                         fill="#D7D9DB" />
-                      <path
+                      <path class="small-zone"
                         d="M380.655 62.6746L335.468 111.811L336.646 112.894C336.808 113.043 337.061 113.033 337.211 112.87L381.924 64.2492C382.036 64.1272 382.029 63.9375 381.907 63.8253L380.655 62.6746Z"
                         fill="#D7D9DB" />
-                      <path class="js-line-side" data-side="depth-small"
+                      <path class="js-line-side small-zone" data-side="depth-small"
                         d="M334.9 51L334.9 112C334.9 112.552 335.348 113 335.9 113L336.9 113L336.9 51L334.9 51Z"
                         fill="#D7D9DB" />
                       <path class="js-line-side" data-side="depth" d="M1 51L1 149L3 149L3 51L1 51Z" fill="#D7D9DB" />
-                      <path
+                      <path class="small-zone"
                         d="M379.988 0L379.988 63C379.988 63.5523 380.436 64 380.988 64L381.988 64L381.988 -8.74227e-08L379.988 0Z"
                         fill="#D7D9DB" />
                       <path d="M381.988 0H46.1883C46.0779 0 45.9883 0.0895431 45.9883 0.2V2H381.988V0Z"
@@ -270,12 +274,26 @@
                       <path d="M337 49H1.5C1.22385 49 1 49.2239 1 49.5V51H337V49Z" fill="#D7D9DB" />
                       <path class="js-line-side" data-side="long" d="M382 0H46.5C46.2238 0 46 0.223858 46 0.5V2H382V0Z"
                         fill="#D7D9DB" />
-                      <path class="js-line-side" data-side="width-small"
+                      <path class="js-line-side small-zone" data-side="width-small"
                         d="M337 111H250.1C250.045 111 250 111.045 250 111.1V113H337V111Z" fill="#D7D9DB" />
-                      <path d="M188 147H1.5C1.22386 147 1 147.224 1 147.5V149H188V147Z" fill="#D7D9DB" />
-                      <path
+                      <path class="small-zone" d="M188 147H1.5C1.22386 147 1 147.224 1 147.5V149H188V147Z"
+                        fill="#D7D9DB" />
+                      <path class="small-zone"
                         d="M250.449 111.202C250.339 111.011 250.094 110.946 249.903 111.056L187.358 147.166C187.119 147.304 187.037 147.61 187.175 147.849L187.725 148.802C187.836 148.993 188.08 149.058 188.272 148.948L250.903 112.788C251.094 112.678 251.159 112.433 251.049 112.242L250.449 111.202Z"
                         fill="#D7D9DB" />
+
+                      <path class="standart-zone"
+                        d="M337.003 147H1.50293C1.22679 147 1.00293 147.224 1.00293 147.5V149H337.003V147Z"
+                        fill="#D7D9DB" />
+                      <path class="standart-zone" d="M380 2L380 99C380 99.5523 380.448 100 381 100L382 100L382 2L380 2Z"
+                        fill="#D7D9DB" />
+                      <path class="standart-zone"
+                        d="M335.003 51L335.003 148C335.003 148.552 335.451 149 336.003 149L337.003 149L337.003 51L335.003 51Z"
+                        fill="#D7D9DB" />
+                      <path class="standart-zone"
+                        d="M380.657 98L335.47 147.136L336.648 148.219C336.81 148.369 337.063 148.358 337.213 148.196L381.926 99.5746C382.038 99.4527 382.03 99.2629 381.909 99.1507L380.657 98Z"
+                        fill="#D7D9DB" />
+
                       <defs>
                         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
                           <use xlink:href="#image0_342_8452"
@@ -311,7 +329,7 @@
             </div>
 
             <div class="calculator__column">
-              <div class="title-small-bold border-b-3 pb-20 mb-20">Техническое помещения для оборудования</div>
+              <div class="title-small-bold border-b-3 pb-20 mb-20">Техническое помещение для оборудования</div>
 
               <div class="calculator__group-radio">
                 <label class="calculator__radio radio-btn">
@@ -450,8 +468,9 @@
                     <div class="input-ui__name">Способ облицовки чаши</div>
                     <select>
                       <option selected value="Плёнка">Плёнка</option>
-                      <option selected value="Плёнка 2">Плёнка 2</option>
-                      <option selected value="Плёнка 3">Плёнка 3</option>
+                      <option value="Плитка">Плитка</option>
+                      <option value="Мозаика">Мозаика</option>
+                      <option value="Иное">Иное</option>
                     </select>
                   </div>
                 </div>
@@ -461,8 +480,8 @@
                     <div class="input-ui__name">Тип перелива</div>
                     <select>
                       <option selected value="Переливной ">Переливной </option>
-                      <option selected value="Переливной 2">Переливной 2</option>
-                      <option selected value="Переливной 3">Переливной 3</option>
+                      <option value="Скиммерный">Скиммерный</option>
+                      <option value="Не знаю">Не знаю</option>
                     </select>
                   </div>
                 </div>
@@ -472,8 +491,7 @@
                     <div class="input-ui__name">СПА Зона</div>
                     <select>
                       <option selected value="Не нужна">Не нужна</option>
-                      <option selected value="Нужна">Нужна</option>
-                      <option selected value="Не нужна 2">Не нужна 2</option>
+                      <option value="Нужна">Нужна</option>
                     </select>
                   </div>
                 </div>
@@ -1359,12 +1377,14 @@
           <div class="calculator__banner banner-calc">
             <div class="banner-calc__wrap p-l-r-30 p-t-b-30">
               <div class="banner-calc__title title-main-bold mb-20">Есть свой проект?</div>
-              <div class="banner-calc__subtitle subtitle mb-20 ">Для расчёта стоимоти вашего дизайн-проекта <a
+              <div class="banner-calc__subtitle subtitle mb-20 ">Для расчёта стоимости вашего дизайн-проекта <a
                   href="#">заполните форму</a>.<br> Наши специалисты свяжутся с вами в течение 3-х рабочих дней.</div>
 
               <div class="banner-calc__buttons">
-                <a href="#" class="banner-calc__link main-btn">Заказать проект</a>
-                <a href="#" class="banner-calc__link main-btn">Прикрепить проект</a>
+                <a href="#" class="banner-calc__link main-btn js-modal-show" data-popup="popup-order-one">Заказать
+                  проект</a>
+                <a href="#" class="banner-calc__link main-btn js-modal-show" data-popup="popup-order-two">Прикрепить
+                  проект</a>
               </div>
             </div>
           </div>
@@ -1759,7 +1779,7 @@
 
         <div class="popup-order__item input-ui --lsit --city">
           <div class="input-ui__wrapper">
-            <div class="input-ui__name">Брянск</div>
+            <div class="input-ui__name">Город</div>
             <input type="text" class="input-ui__field">
             <div class="input-ui__list-wrapper">
               <ul class="input-ui__list">
@@ -1774,21 +1794,21 @@
       </div>
 
       <div class="popup-order__list-size border-b-3">
-        <div class="popup-order__item-size input-ui js-side-input" data-side="long">
+        <div class="popup-order__item-size input-ui">
           <div class="input-ui__wrapper">
             <div class="input-ui__name">Длина, м*</div>
             <input type="text" class="input-ui__field">
           </div>
         </div>
 
-        <div class="popup-order__item-size input-ui js-side-input" data-side="width">
+        <div class="popup-order__item-size input-ui">
           <div class="input-ui__wrapper">
             <div class="input-ui__name">Ширина, м*</div>
             <input type="text" class="input-ui__field">
           </div>
         </div>
 
-        <div class="popup-order__item-size input-ui js-side-input" data-side="depth">
+        <div class="popup-order__item-size input-ui">
           <div class="input-ui__wrapper">
             <div class="input-ui__name">Глубина, м*</div>
             <input type="text" class="input-ui__field">
@@ -1825,14 +1845,14 @@
           </div>
         </div>
 
-        <div class="popup-order__item-size input-ui js-side-input" data-side="width-small">
+        <div class="popup-order__item-size input-ui">
           <div class="input-ui__wrapper">
             <div class="input-ui__name">Длина мелкой зоны, м*</div>
             <input type="text" class="input-ui__field">
           </div>
         </div>
 
-        <div class="popup-order__item-size input-ui js-side-input" data-side="depth-small">
+        <div class="popup-order__item-size input-ui">
           <div class="input-ui__wrapper">
             <div class="input-ui__name">Глубина мелкой зоны, м*</div>
             <input type="text" class="input-ui__field">
@@ -1888,7 +1908,7 @@
 
         <div class="popup-order__item input-ui --lsit --city">
           <div class="input-ui__wrapper">
-            <div class="input-ui__name">Брянск</div>
+            <div class="input-ui__name">Город</div>
             <input type="text" class="input-ui__field">
             <div class="input-ui__list-wrapper">
               <ul class="input-ui__list">
@@ -1905,9 +1925,8 @@
           <div class="input-ui__wrapper">
             <div class="input-ui__name">Эскизный проект</div>
             <select>
-              <option selected value="Эскизный проект 2">Эскизный проект 2</option>
-              <option value="Эскизный проект 3">Эскизный проект 3</option>
-              <option value="Эскизный проект 4">Эскизный проект 4</option>
+              <option selected value="Эскизный проект">Эскизный проект</option>
+              <option value="Рабочие чертежи">Рабочие чертежи</option>
             </select>
           </div>
         </div>
@@ -1945,12 +1964,7 @@
 
 <footer class="footer" style="height: 300px;">
   <div class="wrapper">
-    <div style="max-width: 400px; margin: 50px auto;">
-      <a href="#" class="main-btn js-modal-show" data-popup="popup-order-one" style="margin-bottom: 20px;">Попап -
-        Прикрепите свой
-        проект бассейна</a>
-      <a href="#" class="main-btn js-modal-show" data-popup="popup-order-two">Попап - Закажите свой проект бассейна</a>
-    </div>
+
 
   </div>
 </footer>
