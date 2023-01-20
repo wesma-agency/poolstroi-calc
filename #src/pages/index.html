@@ -10,21 +10,21 @@
 
           <div class="video-gallery__list">
 
-            <div class="video-gallery__item lightgallery-item" data-src="https://www.youtube.com/embed/dl16e_mG6hg">
+            <div class="video-gallery__item lightgallery-item" data-src="https://www.youtube.com/embed/b3VJRoQmVq0">
               <div class="video-gallery__item-name">Как выбрать облицовку бассейна?</div>
               <div class="video-gallery__item-video">
                 <img src="./img/video-prev.png" alt="">
               </div>
             </div>
 
-            <div class="video-gallery__item lightgallery-item" data-src="https://www.youtube.com/embed/dl16e_mG6hg">
+            <div class="video-gallery__item lightgallery-item" data-src="https://www.youtube.com/embed/b3VJRoQmVq0">
               <div class="video-gallery__item-name">Как проходит процесс строительства чаши?</div>
               <div class="video-gallery__item-video">
                 <img src="./img/video-prev.png" alt="">
               </div>
             </div>
 
-            <div class="video-gallery__item lightgallery-item" data-src="https://www.youtube.com/embed/dl16e_mG6hg">
+            <div class="video-gallery__item lightgallery-item" data-src="https://www.youtube.com/embed/b3VJRoQmVq0">
               <div class="video-gallery__item-name">Реализация проекта под ключ.</div>
               <div class="video-gallery__item-video">
                 <img src="./img/video-prev.png" alt="">
@@ -1805,26 +1805,28 @@
             <div class="input-ui__name">Наличие мелкой зоны</div>
             <div class="input-ui__list-radio">
               <label class="input-ui__radio-label">
-                <input checked type="radio" name="radio-popup-zone-1" class="input-ui__radio">
+                <input checked type="radio" name="radio-popup-zone-1" data-zone="small"
+                  class="input-ui__radio js-radio-zone">
                 <div class="input-ui__radio-mark">Да</div>
               </label>
 
               <label class="input-ui__radio-label">
-                <input type="radio" name="radio-popup-zone-1" class="input-ui__radio">
+                <input type="radio" name="radio-popup-zone-1" data-zone="standart"
+                  class="input-ui__radio js-radio-zone">
                 <div class="input-ui__radio-mark">Нет</div>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="popup-order__item-size input-ui">
+        <div class="popup-order__item-size input-ui js-input-zone">
           <div class="input-ui__wrapper">
             <div class="input-ui__name">Длина мелкой зоны, м*</div>
             <input type="text" class="input-ui__field">
           </div>
         </div>
 
-        <div class="popup-order__item-size input-ui">
+        <div class="popup-order__item-size input-ui js-input-zone">
           <div class="input-ui__wrapper">
             <div class="input-ui__name">Глубина мелкой зоны, м*</div>
             <input type="text" class="input-ui__field">
