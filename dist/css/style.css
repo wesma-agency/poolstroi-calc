@@ -1867,6 +1867,8 @@ body.lock {
       -webkit-transition: border-color 0.15s ease-in;
       -o-transition: border-color 0.15s ease-in;
       transition: border-color 0.15s ease-in; }
+    .popup-order__item-size.disabled {
+      opacity: 0.5; }
   .popup-order__link {
     display: block;
     max-width: 160px;

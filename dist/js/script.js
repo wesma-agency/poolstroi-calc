@@ -63,33 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
-	let zoneRadio = document.querySelectorAll(".js-radio-zone");
-	let zoneInput = document.querySelectorAll(".js-input-zone");
-
-	function changeInputZone(input) {
-		let idZone = input.getAttribute("data-zone");
-
-		if (idZone === "small") {
-			zoneInput.forEach((element) => {
-				element.classList.remove("disabled");
-				element.querySelector("input").disabled = false;
-			});
-		}
-
-		if (idZone === "standart") {
-			zoneInput.forEach((element) => {
-				element.classList.add("disabled");
-				element.querySelector("input").disabled = true;
-			});
-		}
-	}
-
-	zoneRadio.forEach((element) => {
-		element.addEventListener("change", function () {
-			changeInputZone(this);
-		});
-	});
-
 	let inputSide = Array.prototype.slice.call(document.querySelectorAll(".js-side-input"));
 	let dotSide = Array.prototype.slice.call(document.querySelectorAll(".js-side-dot"));
 	let lineSide = Array.prototype.slice.call(document.querySelectorAll(".js-line-side"));
@@ -152,6 +125,40 @@ document.addEventListener("DOMContentLoaded", function () {
 			changeZone(this);
 		});
 	});
+
+	// Отключение зон в попапе
+
+	let zoneRadio = document.querySelectorAll(".js-radio-zone");
+
+	function changeInputZone(input) {
+		let idZone = input.getAttribute("data-zone");
+		let zoneContainer = input.closest(".js-container-input");
+		let zoneInput = zoneContainer.querySelectorAll(".js-input-zone");
+
+		if (zoneInput.length > 0) {
+			if (idZone === "small") {
+				zoneInput.forEach((element) => {
+					element.classList.remove("disabled");
+					element.querySelector("input").disabled = false;
+				});
+			}
+
+			if (idZone === "standart") {
+				zoneInput.forEach((element) => {
+					element.classList.add("disabled");
+					element.querySelector("input").disabled = true;
+				});
+			}
+		}
+	}
+
+	if (zoneRadio.length > 0) {
+		zoneRadio.forEach((element) => {
+			element.addEventListener("change", function () {
+				changeInputZone(this);
+			});
+		});
+	}
 
 	// Позиция надписей
 	function hintPosition() {

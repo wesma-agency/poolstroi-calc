@@ -1378,6 +1378,10 @@
 		& .input-ui__wrapper {
 			transition: border-color 0.15s ease-in;
 		}
+
+		&.disabled {
+			opacity: 0.5;
+		}
 	}
 
 	&__link {
